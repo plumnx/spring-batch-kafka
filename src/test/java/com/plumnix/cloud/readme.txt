@@ -66,56 +66,61 @@ line no: 10, length: 166
 668000000
 
 // 1.
-23:20:00.571 [main] INFO com.plumnix.cloud.FileTest - before time:2020-01-13T15:20:00.123Z
-23:20:00.578 [main] INFO com.plumnix.cloud.FileTest - now time:2020-01-13T15:20:00.387Z
-23:20:00.578 [main] INFO com.plumnix.cloud.FileTest - Max Memory: 1787 MB/r/nTotal Memory: 121 MB/r/nFree Memory: 101 MB/r/n
-23:20:00.579 [main] INFO com.plumnix.cloud.FileTest - Max Memory: 1787 MB/r/nTotal Memory: 121 MB/r/nFree Memory: 101 MB/r/n
+23:45:30.484 [main] INFO com.plumnix.cloud.FileTest - before time:2020-01-13T15:45:30.199Z
+23:45:30.492 [main] INFO com.plumnix.cloud.FileTest - now time:2020-01-13T15:45:30.360Z
+23:45:30.492 [main] INFO com.plumnix.cloud.FileTest - Max Memory: 1787 MB/r/nTotal Memory: 121 MB/r/nFree Memory: 101 MB/r/n
+23:45:30.492 [main] INFO com.plumnix.cloud.FileTest - Max Memory: 1787 MB/r/nTotal Memory: 121 MB/r/nFree Memory: 97 MB/r/n
 
-23:20:17.265 [main] INFO com.plumnix.cloud.FileTest - before time:2020-01-13T15:20:16.952Z
-23:20:17.272 [main] INFO com.plumnix.cloud.FileTest - now time:2020-01-13T15:20:17.127Z
-23:20:17.272 [main] INFO com.plumnix.cloud.FileTest - Max Memory: 1787 MB/r/nTotal Memory: 121 MB/r/nFree Memory: 101 MB/r/n
-23:20:17.273 [main] INFO com.plumnix.cloud.FileTest - Max Memory: 1787 MB/r/nTotal Memory: 121 MB/r/nFree Memory: 101 MB/r/n
+23:45:46.473 [main] INFO com.plumnix.cloud.FileTest - before time:2020-01-13T15:45:46.155Z
+23:45:46.479 [main] INFO com.plumnix.cloud.FileTest - now time:2020-01-13T15:45:46.351Z
+23:45:46.480 [main] INFO com.plumnix.cloud.FileTest - Max Memory: 1787 MB/r/nTotal Memory: 121 MB/r/nFree Memory: 101 MB/r/n
+23:45:46.480 [main] INFO com.plumnix.cloud.FileTest - Max Memory: 1787 MB/r/nTotal Memory: 121 MB/r/nFree Memory: 97 MB/r/n
 
-23:20:31.294 [main] INFO com.plumnix.cloud.FileTest - before time:2020-01-13T15:20:30.953Z
-23:20:31.300 [main] INFO com.plumnix.cloud.FileTest - now time:2020-01-13T15:20:31.136Z
-23:20:31.300 [main] INFO com.plumnix.cloud.FileTest - Max Memory: 1787 MB/r/nTotal Memory: 121 MB/r/nFree Memory: 101 MB/r/n
-23:20:31.301 [main] INFO com.plumnix.cloud.FileTest - Max Memory: 1787 MB/r/nTotal Memory: 121 MB/r/nFree Memory: 97 MB/r/n
+23:45:55.753 [main] INFO com.plumnix.cloud.FileTest - before time:2020-01-13T15:45:55.430Z
+23:45:55.760 [main] INFO com.plumnix.cloud.FileTest - now time:2020-01-13T15:45:55.637Z
+23:45:55.760 [main] INFO com.plumnix.cloud.FileTest - Max Memory: 1787 MB/r/nTotal Memory: 121 MB/r/nFree Memory: 101 MB/r/n
+23:45:55.760 [main] INFO com.plumnix.cloud.FileTest - Max Memory: 1787 MB/r/nTotal Memory: 121 MB/r/nFree Memory: 97 MB/r/n
 
-23:20:45.182 [main] INFO com.plumnix.cloud.FileTest - before time:2020-01-13T15:20:44.822Z
-23:20:45.190 [main] INFO com.plumnix.cloud.FileTest - now time:2020-01-13T15:20:45.046Z
-23:20:45.190 [main] INFO com.plumnix.cloud.FileTest - Max Memory: 1787 MB/r/nTotal Memory: 121 MB/r/nFree Memory: 101 MB/r/n
-23:20:45.191 [main] INFO com.plumnix.cloud.FileTest - Max Memory: 1787 MB/r/nTotal Memory: 121 MB/r/nFree Memory: 97 MB/r/n
+23:46:05.378 [main] INFO com.plumnix.cloud.FileTest - before time:2020-01-13T15:46:05.090Z
+23:46:05.387 [main] INFO com.plumnix.cloud.FileTest - now time:2020-01-13T15:46:05.253Z
+23:46:05.390 [main] INFO com.plumnix.cloud.FileTest - Max Memory: 1787 MB/r/nTotal Memory: 121 MB/r/nFree Memory: 101 MB/r/n
+23:46:05.390 [main] INFO com.plumnix.cloud.FileTest - Max Memory: 1787 MB/r/nTotal Memory: 121 MB/r/nFree Memory: 97 MB/r/n
 
-23:21:01.608 [main] INFO com.plumnix.cloud.FileTest - before time:2020-01-13T15:21:01.242Z
-23:21:01.617 [main] INFO com.plumnix.cloud.FileTest - now time:2020-01-13T15:21:01.423Z
-23:21:01.617 [main] INFO com.plumnix.cloud.FileTest - Max Memory: 1787 MB/r/nTotal Memory: 121 MB/r/nFree Memory: 101 MB/r/n
-23:21:01.618 [main] INFO com.plumnix.cloud.FileTest - Max Memory: 1787 MB/r/nTotal Memory: 121 MB/r/nFree Memory: 97 MB/r/n
+23:46:12.558 [main] INFO com.plumnix.cloud.FileTest - before time:2020-01-13T15:46:12.263Z
+23:46:12.565 [main] INFO com.plumnix.cloud.FileTest - now time:2020-01-13T15:46:12.435Z
+23:46:12.566 [main] INFO com.plumnix.cloud.FileTest - Max Memory: 1787 MB/r/nTotal Memory: 121 MB/r/nFree Memory: 101 MB/r/n
+23:46:12.566 [main] INFO com.plumnix.cloud.FileTest - Max Memory: 1787 MB/r/nTotal Memory: 121 MB/r/nFree Memory: 97 MB/r/n
+
+
 
 // 2.
-23:21:26.441 [main] INFO com.plumnix.cloud.FileTest - before time:2020-01-13T15:21:25.313Z
-23:21:26.458 [main] INFO com.plumnix.cloud.FileTest - now time:2020-01-13T15:21:26.240Z
-23:21:26.458 [main] INFO com.plumnix.cloud.FileTest - Max Memory: 1787 MB/r/nTotal Memory: 121 MB/r/nFree Memory: 101 MB/r/n
-23:21:26.459 [main] INFO com.plumnix.cloud.FileTest - Max Memory: 1787 MB/r/nTotal Memory: 289 MB/r/nFree Memory: 133 MB/r/n
+23:44:15.636 [main] INFO com.plumnix.cloud.FileTest - before time:2020-01-13T15:44:15.182Z
+23:44:15.645 [main] INFO com.plumnix.cloud.FileTest - now time:2020-01-13T15:44:15.504Z
+23:44:15.645 [main] INFO com.plumnix.cloud.FileTest - Max Memory: 1787 MB/r/nTotal Memory: 121 MB/r/nFree Memory: 101 MB/r/n
+23:44:15.645 [main] INFO com.plumnix.cloud.FileTest - Max Memory: 1787 MB/r/nTotal Memory: 153 MB/r/nFree Memory: 127 MB/r/n
 
-23:21:43.108 [main] INFO com.plumnix.cloud.FileTest - before time:2020-01-13T15:21:42.324Z
-23:21:43.117 [main] INFO com.plumnix.cloud.FileTest - now time:2020-01-13T15:21:42.979Z
-23:21:43.117 [main] INFO com.plumnix.cloud.FileTest - Max Memory: 1787 MB/r/nTotal Memory: 121 MB/r/nFree Memory: 101 MB/r/n
-23:21:43.118 [main] INFO com.plumnix.cloud.FileTest - Max Memory: 1787 MB/r/nTotal Memory: 299 MB/r/nFree Memory: 163 MB/r/n
+23:44:33.900 [main] INFO com.plumnix.cloud.FileTest - before time:2020-01-13T15:44:33.390Z
+23:44:33.908 [main] INFO com.plumnix.cloud.FileTest - now time:2020-01-13T15:44:33.724Z
+23:44:33.908 [main] INFO com.plumnix.cloud.FileTest - Max Memory: 1787 MB/r/nTotal Memory: 121 MB/r/nFree Memory: 101 MB/r/n
+23:44:33.909 [main] INFO com.plumnix.cloud.FileTest - Max Memory: 1787 MB/r/nTotal Memory: 153 MB/r/nFree Memory: 127 MB/r/n
 
-23:21:58.992 [main] INFO com.plumnix.cloud.FileTest - before time:2020-01-13T15:21:58.195Z
-23:21:58.999 [main] INFO com.plumnix.cloud.FileTest - now time:2020-01-13T15:21:58.866Z
-23:21:58.999 [main] INFO com.plumnix.cloud.FileTest - Max Memory: 1787 MB/r/nTotal Memory: 121 MB/r/nFree Memory: 101 MB/r/n
-23:21:58.999 [main] INFO com.plumnix.cloud.FileTest - Max Memory: 1787 MB/r/nTotal Memory: 298 MB/r/nFree Memory: 163 MB/r/n
+23:44:46.542 [main] INFO com.plumnix.cloud.FileTest - before time:2020-01-13T15:44:46.062Z
+23:44:46.550 [main] INFO com.plumnix.cloud.FileTest - now time:2020-01-13T15:44:46.421Z
+23:44:46.550 [main] INFO com.plumnix.cloud.FileTest - Max Memory: 1787 MB/r/nTotal Memory: 121 MB/r/nFree Memory: 101 MB/r/n
+23:44:46.550 [main] INFO com.plumnix.cloud.FileTest - Max Memory: 1787 MB/r/nTotal Memory: 153 MB/r/nFree Memory: 127 MB/r/n
 
-23:22:14.494 [main] INFO com.plumnix.cloud.FileTest - before time:2020-01-13T15:22:13.662Z
-23:22:14.504 [main] INFO com.plumnix.cloud.FileTest - now time:2020-01-13T15:22:14.318Z
-23:22:14.504 [main] INFO com.plumnix.cloud.FileTest - Max Memory: 1787 MB/r/nTotal Memory: 121 MB/r/nFree Memory: 101 MB/r/n
-23:22:14.505 [main] INFO com.plumnix.cloud.FileTest - Max Memory: 1787 MB/r/nTotal Memory: 299 MB/r/nFree Memory: 163 MB/r/n
+23:44:55.154 [main] INFO com.plumnix.cloud.FileTest - before time:2020-01-13T15:44:54.684Z
+23:44:55.156 [main] INFO com.plumnix.cloud.FileTest - now time:2020-01-13T15:44:55.021Z
+23:44:55.156 [main] INFO com.plumnix.cloud.FileTest - Max Memory: 1787 MB/r/nTotal Memory: 121 MB/r/nFree Memory: 101 MB/r/n
+23:44:55.156 [main] INFO com.plumnix.cloud.FileTest - Max Memory: 1787 MB/r/nTotal Memory: 153 MB/r/nFree Memory: 127 MB/r/n
 
-23:22:34.192 [main] INFO com.plumnix.cloud.FileTest - before time:2020-01-13T15:22:33.419Z
-23:22:34.198 [main] INFO com.plumnix.cloud.FileTest - now time:2020-01-13T15:22:34.060Z
-23:22:34.198 [main] INFO com.plumnix.cloud.FileTest - Max Memory: 1787 MB/r/nTotal Memory: 121 MB/r/nFree Memory: 101 MB/r/n
-23:22:34.199 [main] INFO com.plumnix.cloud.FileTest - Max Memory: 1787 MB/r/nTotal Memory: 296 MB/r/nFree Memory: 159 MB/r/n
+23:45:05.472 [main] INFO com.plumnix.cloud.FileTest - before time:2020-01-13T15:45:04.958Z
+23:45:05.478 [main] INFO com.plumnix.cloud.FileTest - now time:2020-01-13T15:45:05.290Z
+23:45:05.478 [main] INFO com.plumnix.cloud.FileTest - Max Memory: 1787 MB/r/nTotal Memory: 121 MB/r/nFree Memory: 101 MB/r/n
+23:45:05.478 [main] INFO com.plumnix.cloud.FileTest - Max Memory: 1787 MB/r/nTotal Memory: 153 MB/r/nFree Memory: 127 MB/r/n
+
+
+
 
 
 

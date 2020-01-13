@@ -405,6 +405,7 @@ public class FileTest {
 
     @Test
     public void test_final_four() throws IOException {
+        int lineNo = 0;
         String beforeMemory = logMemory();
         Instant beforeNow = Instant.now();
         StringBuilder sb = new StringBuilder();
@@ -414,8 +415,10 @@ public class FileTest {
         try (BufferedReader reader = new BufferedReader(new FileReader(file.getAbsolutePath()))) {
             String thisLine = null;
             while ((thisLine = reader.readLine()) != null) {
-                sb.append(thisLine + lineSeparator);
-//                log.info(thisLine);
+                if (++lineNo > 900000) {
+                    sb.append(thisLine + lineSeparator);
+                    // log.info(thisLine);
+                }
             }
         }
 
