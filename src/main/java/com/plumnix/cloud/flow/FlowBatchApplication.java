@@ -1,6 +1,5 @@
 package com.plumnix.cloud.flow;
 
-import com.plumnix.cloud.consumer.ConsumerApplication;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;

@@ -1,8 +1,10 @@
 package com.plumnix.cloud.flow;
 
 import com.google.common.base.Splitter;
-import com.plumnix.cloud.flow.CsvItemReader.HeaderBodyTemplate.HeaderBodyItem;
+import com.plumnix.cloud.entity.HeaderBodyTemplate;
 import lombok.Data;
+import org.springframework.batch.core.ChunkListener;
+import org.springframework.batch.core.scope.context.ChunkContext;
 import org.springframework.batch.item.ItemProcessor;
 import org.springframework.lang.Nullable;
 
@@ -13,11 +15,14 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class CsvItemProcessor implements ItemProcessor<HeaderBodyItem, CsvItemProcessor.HeaderBody> {
+public class CsvItemProcessor implements ChunkListener, ItemProcessor<HeaderBodyTemplate.HeaderBodyItem, CsvItemProcessor.HeaderBody> {
+
+    private ChunkContext chunkContext;
 
     @Nullable
     @Override
-    public HeaderBody process(HeaderBodyItem item) throws Exception {
+    public HeaderBody process(HeaderBodyTemplate.HeaderBodyItem item) throws Exception {
+//        System.out.println(Thread.currentThread().getId() + " " + Thread.currentThread().getName());
         if(item.getLine() == null) {
             return null;
         }
@@ -34,7 +39,23 @@ public class CsvItemProcessor implements ItemProcessor<HeaderBodyItem, CsvItemPr
                 headerBody.addBody(headers.get(i), iterator.next());
             }
         }
+//        System.out.println(Thread.currentThread().getId() + " " + Thread.currentThread().getName() + " ItemProcessor: " + headerBody.toString());
         return headerBody;
+    }
+
+    @Override
+    public void beforeChunk(ChunkContext context) {
+        this.chunkContext = context;
+    }
+
+    @Override
+    public void afterChunk(ChunkContext context) {
+
+    }
+
+    @Override
+    public void afterChunkError(ChunkContext context) {
+
     }
 
     @Data
@@ -53,7 +74,7 @@ public class CsvItemProcessor implements ItemProcessor<HeaderBodyItem, CsvItemPr
             body.put(key, value);
         }
 
-        public HeaderBody accept(HeaderBodyItem item) {
+        public HeaderBody accept(HeaderBodyTemplate.HeaderBodyItem item) {
             this.headers.putAll(item.getHeaderBodyTemplate().getHeaders());
             return this;
         }
