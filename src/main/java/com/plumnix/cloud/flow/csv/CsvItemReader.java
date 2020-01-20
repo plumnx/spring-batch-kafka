@@ -1,15 +1,10 @@
-package com.plumnix.cloud.flow;
+package com.plumnix.cloud.flow.csv;
 
-import com.google.common.base.Splitter;
-import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
-import com.plumnix.cloud.entity.HeaderBodyTemplate;
-import lombok.Data;
+import com.plumnix.cloud.flow.csv.entity.HeaderBodyTemplate;
 import org.springframework.batch.core.ChunkListener;
 import org.springframework.batch.core.ExitStatus;
 import org.springframework.batch.core.StepExecution;
 import org.springframework.batch.core.StepExecutionListener;
-import org.springframework.batch.core.jsr.ChunkListenerAdapter;
 import org.springframework.batch.core.scope.context.ChunkContext;
 import org.springframework.batch.item.ItemReader;
 import org.springframework.core.io.ClassPathResource;
@@ -20,11 +15,7 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Iterator;
-import java.util.LinkedHashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class CsvItemReader implements StepExecutionListener, ChunkListener, ItemReader<HeaderBodyTemplate.HeaderBodyItem> {
 

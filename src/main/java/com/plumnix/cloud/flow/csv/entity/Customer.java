@@ -1,4 +1,4 @@
-package com.plumnix.cloud.entity;
+package com.plumnix.cloud.flow.csv.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

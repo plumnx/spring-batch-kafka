@@ -1,4 +1,4 @@
-package com.plumnix.cloud.entity;
+package com.plumnix.cloud.flow.csv.entity;
 
 import com.google.common.base.Splitter;
 import com.google.common.collect.Lists;

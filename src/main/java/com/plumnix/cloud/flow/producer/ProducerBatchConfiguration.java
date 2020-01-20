@@ -1,35 +1,32 @@
-package com.plumnix.cloud.producer;
+package com.plumnix.cloud.flow.producer;
 
-import com.plumnix.cloud.entity.Customer;
-import lombok.RequiredArgsConstructor;
+import com.plumnix.cloud.flow.csv.entity.Customer;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
-import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
 import org.springframework.batch.core.configuration.annotation.JobBuilderFactory;
 import org.springframework.batch.core.configuration.annotation.StepBuilderFactory;
 import org.springframework.batch.core.launch.support.RunIdIncrementer;
 import org.springframework.batch.item.ItemReader;
 import org.springframework.batch.item.kafka.KafkaItemWriter;
 import org.springframework.batch.item.kafka.builder.KafkaItemWriterBuilder;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.core.KafkaTemplate;
 
 import java.util.concurrent.atomic.AtomicLong;
 
-@EnableBatchProcessing
-@SpringBootApplication
-@RequiredArgsConstructor
-public class ProducerApplication {
+//@Configuration
+public class ProducerBatchConfiguration {
 
-    public static void main(String args[]) {
-        SpringApplication.run(ProducerApplication.class, args);
-    }
+    @Autowired
+    private JobBuilderFactory jobBuilderFactory;
 
-    private final JobBuilderFactory jobBuilderFactory;
-    private final StepBuilderFactory stepBuilderFactory;
-    private final KafkaTemplate<Long, Customer> template;
+    @Autowired
+    private StepBuilderFactory stepBuilderFactory;
+
+    @Autowired
+    private KafkaTemplate<Long, Customer> template;
 
     @Bean
     Job job() {

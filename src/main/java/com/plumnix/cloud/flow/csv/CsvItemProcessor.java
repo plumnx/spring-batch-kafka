@@ -1,7 +1,7 @@
-package com.plumnix.cloud.flow;
+package com.plumnix.cloud.flow.csv;
 
 import com.google.common.base.Splitter;
-import com.plumnix.cloud.entity.HeaderBodyTemplate;
+import com.plumnix.cloud.flow.csv.entity.HeaderBodyTemplate;
 import lombok.Data;
 import org.springframework.batch.core.ChunkListener;
 import org.springframework.batch.core.scope.context.ChunkContext;

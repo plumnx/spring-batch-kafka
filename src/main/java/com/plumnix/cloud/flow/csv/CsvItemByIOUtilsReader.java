@@ -1,6 +1,6 @@
-package com.plumnix.cloud.flow;
+package com.plumnix.cloud.flow.csv;
 
-import com.plumnix.cloud.entity.HeaderBodyTemplate;
+import com.plumnix.cloud.flow.csv.entity.HeaderBodyTemplate;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.io.LineIterator;
 import org.springframework.batch.core.ChunkListener;

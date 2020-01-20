@@ -1,4 +1,4 @@
-package com.plumnix.cloud.consumer;
+package com.plumnix.cloud.flow.consumer;
 
 import org.springframework.batch.item.ItemReader;
 import org.springframework.batch.item.NonTransientResourceException;

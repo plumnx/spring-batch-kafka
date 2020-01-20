@@ -1,4 +1,4 @@
-package com.plumnix.cloud.flow;
+package com.plumnix.cloud.flow.csv;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -21,7 +21,7 @@ public class CsvItemWriter implements ChunkListener, StepExecutionListener, Item
     @Override
     public void write(List<? extends CsvItemProcessor.HeaderBody> items) throws Exception {
 //        System.out.println(Thread.currentThread().getId() + " " + Thread.currentThread().getName() + " chunk: " + this.chunkContext.getAttribute("read"));
-//        System.out.println(Thread.currentThread().getId() + " " + Thread.currentThread().getName() + " CsvItemWriter: " + items.toString());
+//        System.out.println(Thread.currentThread().getId() + " " + Thread.currentThread().getName() + " TestDbItemWriter: " + items.toString());
         items.forEach(o -> {
             try {
                 System.out.println(Thread.currentThread().getId() + " " + Thread.currentThread().getName() + " new "+ new ObjectMapper().writeValueAsString(o));
