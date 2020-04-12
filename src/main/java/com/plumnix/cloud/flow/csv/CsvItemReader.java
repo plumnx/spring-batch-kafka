@@ -38,7 +38,7 @@ public class CsvItemReader implements StepExecutionListener, ChunkListener, Item
             List<String> lines = null;
             try {
                 lines = Files.readAllLines(Paths.get(
-                        new ClassPathResource("/test_701.csv").getURI()), StandardCharsets.UTF_8);
+                        new ClassPathResource("/test.csv").getURI()), StandardCharsets.UTF_8);
             } catch (IOException e) {
                 e.printStackTrace();
             }

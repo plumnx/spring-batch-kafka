@@ -21,14 +21,14 @@ public class CsvItemWriter implements ChunkListener, StepExecutionListener, Item
     @Override
     public void write(List<? extends CsvItemProcessor.HeaderBody> items) throws Exception {
 //        System.out.println(Thread.currentThread().getId() + " " + Thread.currentThread().getName() + " chunk: " + this.chunkContext.getAttribute("read"));
-//        System.out.println(Thread.currentThread().getId() + " " + Thread.currentThread().getName() + " TestDbItemWriter: " + items.toString());
-        items.forEach(o -> {
-            try {
-                System.out.println(Thread.currentThread().getId() + " " + Thread.currentThread().getName() + " new "+ new ObjectMapper().writeValueAsString(o));
-            } catch (JsonProcessingException e) {
-                e.printStackTrace();
-            }
-        });
+        System.out.println(Thread.currentThread().getId() + " " + Thread.currentThread().getName() + " TestDbItemWriter: " + items.toString());
+//        items.forEach(o -> {
+//            try {
+//                System.out.println(Thread.currentThread().getId() + " " + Thread.currentThread().getName() + " new "+ new ObjectMapper().writeValueAsString(o));
+//            } catch (JsonProcessingException e) {
+//                e.printStackTrace();
+//            }
+//        });
     }
 
     @Override

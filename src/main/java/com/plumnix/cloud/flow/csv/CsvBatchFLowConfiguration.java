@@ -1,5 +1,6 @@
 package com.plumnix.cloud.flow.csv;
 
+import com.plumnix.cloud.flow.testdb.TestDbItemReader;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.JobExecutionListener;
 import org.springframework.batch.core.Step;
@@ -17,7 +18,7 @@ import org.springframework.core.task.SimpleAsyncTaskExecutor;
 import org.springframework.core.task.TaskExecutor;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 
-//@Configuration
+@Configuration
 public class CsvBatchFLowConfiguration {
 
     @Autowired
@@ -66,9 +67,10 @@ public class CsvBatchFLowConfiguration {
         return stepBuilderFactory
                 .get("csvStep")
                 .chunk(Integer.MAX_VALUE)
+                .reader(new CsvItemReader())
 //                .reader(new TestDbItemReader())
-                .reader(new CsvItemByIOUtilsReader())
-                .processor(csvItemProcessor)
+//                .reader(new CsvItemByIOUtilsReader())
+                .processor(csvItemProcessor())
                 .writer(new CsvItemWriter())
 //                .taskExecutor(taskExecutor)
 //                .taskExecutor(threadPoolTaskExecutor())
